@@ -1,5 +1,6 @@
 <template>
-  <scroller lock-x scrollbar-y use-pulldown @pulldown:loading="load" enable-horizontal-swiping>
+
+  <scroller lock-x scrollbar-y use-pulldown @pulldown:loading="load" enable-horizontal-swiping height="300px">
     <div class="box2">
       <swiper :list="list" direction="horizontal" auto :min-moving-distance="20" height="300px"></swiper>
     </div>
@@ -34,6 +35,9 @@
       <div class="flex-demo" style="margin-left:0">3</div>
     </flexbox-item>
   </flexbox>
+
+
+
 </template>
 
 <script>
