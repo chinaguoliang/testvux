@@ -5,6 +5,8 @@
   </div>
   <group title="cell demo">
     <cell title="Vux" value="Cool" is-link></cell>
+    <cell title="A" value="B" is-link></cell>
+    <cell title="C" value="D" is-link></cell>
   </group>
 
   <divider>Horizontal</divider>
