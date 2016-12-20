@@ -5,11 +5,13 @@
       <swiper :list="list" direction="horizontal" auto :min-moving-distance="20" height="300px"></swiper>
     </div>
   </scroller>
-  <group title="cell demo">
+
+  <div>
     <cell title="Vux" value="Cool" is-link></cell>
     <cell title="A" value="B" is-link></cell>
     <cell title="C" value="D" is-link></cell>
-  </group>
+  </div>
+
 
   <divider>Horizontal</divider>
   <flexbox style="width:100%;align-items:center;">
