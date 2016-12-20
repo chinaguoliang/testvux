@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-import Home from './components/Hall'
+import Home from './components/Home'
 import VueRouter from 'vue-router'
 import Account from './components/Account'
 import UserInfo from './components/UserInfo'
