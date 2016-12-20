@@ -14,7 +14,7 @@
   <divider>Horizontal</divider>
   <flexbox style="width:100%;align-items:center;">
     <flexbox-item>
-      <a v-link="{name:'account',params:{accountId:'xingyuji',password:123456}}">Go to account</a>
+      <div class="flex-demo" v-link="{name:'account',params:{accountId:'xingyuji',password:123456}}">Go to account</div>
     </flexbox-item>
   </flexbox>
   <flexbox style="height:40px;">
@@ -24,9 +24,7 @@
     <flexbox-item>
       <div class="flex-demo">2</div>
     </flexbox-item>
-    <flexbox-item>
-      <div class="flex-demo">3</div>
-    </flexbox-item>
+
   </flexbox>
   <divider>Vertical</divider>
   <flexbox orient="vertical" :margin-left=0>
