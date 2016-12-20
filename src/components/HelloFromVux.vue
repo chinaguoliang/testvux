@@ -12,6 +12,11 @@
   </group>
 
   <divider>Horizontal</divider>
+  <flexbox style="width:100%;align-items:center;">
+    <flexbox-item>
+      <a v-link="{name:'account',params:{accountId:'xingyuji',password:123456}}">Go to account</a>
+    </flexbox-item>
+  </flexbox>
   <flexbox style="height:40px;">
     <flexbox-item>
       <div class="flex-demo">1</div>
