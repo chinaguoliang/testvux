@@ -5,7 +5,7 @@
       <a>receiveData:{{accountId}},{{password}}</a>
     </div>
 </template>
-<style>
+<style scoped>
     body{
     }
 </style>

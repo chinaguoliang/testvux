@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="backgroundColor">
         <div>UserInfo</div>
       <div>receive Data:{{userName}}-{{userPassword}}</div>
     </div>
 </template>
-<style>
-    body{
+<style scoped>
+    .backgroundColor{
         background-color:#ff0000;
     }
 </style>
