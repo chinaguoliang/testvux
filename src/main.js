@@ -4,7 +4,6 @@ import Home from './components/Home'
 import VueRouter from 'vue-router'
 import Account from './components/Account'
 import UserInfo from './components/UserInfo'
-
 const FastClick = require('fastclick')
 FastClick.attach(document.body)
 

@@ -1,5 +1,11 @@
 <template>
 
+  <divider>{{msg}}</divider>
+  <title-bar></title-bar>
+  <divider>a</divider>
+  <navigation-bar></navigation-bar>
+  <divider>b</divider>
+
   <scroller lock-x scrollbar-y use-pulldown @pulldown:loading="load" enable-horizontal-swiping height="300px">
     <div class="box2">
       <swiper :list="list" direction="horizontal" auto :min-moving-distance="20" height="300px"></swiper>
@@ -42,15 +48,21 @@
   </flexbox>
 
 
-
 </template>
 
 <script>
+import Vue from 'vue'
 import Group from 'vux/src/components/group'
 import Cell from 'vux/src/components/cell'
 import { Scroller, Swiper } from 'vux/src/components'
+import TitleBar from '../components/TitleBar'
+import NavigationBar from '../components/NavigationBar'
+import Bus from '../js/bus.js'
+
  //引入组件
-    import {Divider,FlexboxItem,Flexbox} from 'vux/src/components'
+import {Divider,FlexboxItem,Flexbox} from 'vux/src/components'
+
+var bus = new Vue();
 
 export default {
   components: {
@@ -58,7 +70,9 @@ export default {
     Cell,
      Divider,FlexboxItem,Flexbox,
      Scroller,
-    Swiper
+    Swiper,
+    TitleBar,
+    NavigationBar
   },
   methods: {
     load (uuid) {
@@ -89,6 +103,13 @@ export default {
         title: '播下茶籽，明春可发芽？'
       }]
     }
+  },
+  ready(){
+     Bus.$on('loadSuccess', text => {
+      if (text) {
+        this.msg = text;
+      }
+    })
   }
 }
 
