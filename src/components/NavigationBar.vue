@@ -18,7 +18,7 @@
         ready(){
          Bus.$on('loadSuccess', text => {
           if (text) {
-            this.msg = text;
+            this.msg = text.data;
           }
     })
   }

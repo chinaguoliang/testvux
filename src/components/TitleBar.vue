@@ -20,7 +20,7 @@ import Bus from '../js/bus.js'
         },
         methods: {
           addCount:function(){
-            Bus.$emit('loadSuccess', '添加成功！');
+            Bus.$emit('loadSuccess', {data:'添加成功',count:20});
           }
         }
 
