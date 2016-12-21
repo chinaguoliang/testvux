@@ -62,7 +62,6 @@ import Bus from '../js/bus.js'
  //引入组件
 import {Divider,FlexboxItem,Flexbox} from 'vux/src/components'
 
-var bus = new Vue();
 
 export default {
   components: {
