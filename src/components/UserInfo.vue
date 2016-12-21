@@ -27,14 +27,14 @@
           this.userName = this.$route.params.userName;
           this.userPassword = this.$route.params.userPassword;
 
-          this.$http.get("http://amidgame.cn/api/attendance/getAllLocation").then(
+          this.$http.get("http://localhost:8081/attendance/getAllLocation").then(
             function (res) {
                 // 处理成功的结果
-                //alert("success" + res.body);
-                 console.log("requestMsg:" + res);
+                alert("success");
+                 console.log("requestMsg:" + JSON.stringify(res.body));
             },function (res) {
             // 处理失败的结果
-                //alert("failed");
+                alert("failed");
               console.log("requestMsg:" + res);
             }
           );
